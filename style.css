@@ -43,10 +43,10 @@ div{
 }
 .navbar a{
     text-decoration: none;
-    color: #d4e2e8;/*#b5b5e7*/
+    color: #d4e2e8;
     width: 100px;
     display: block;
-    padding: 1em 0 .5em 0;
+    padding: .8em 0 .625em 0;
     font-size: 1em;
     font-weight: bold;
     text-align: center;
@@ -158,7 +158,7 @@ a.button:hover, a.button:active{
 }
 
 p{
-    margin:0; /*fixes white space between sections*/
+    margin:0;
 }
 
 #About{
@@ -200,7 +200,7 @@ p{
 .text{
     margin-left: auto;
     margin-right: auto;
-    width: 22em;
+    width: 24em;
     margin-bottom: 3em;
     padding-top: 1em; 
     color: #44a790;
@@ -352,7 +352,7 @@ input[type=submit]:hover{
     background-color: #44a790;
 }
 .new-font{
-    font-family: Helvetica;
+    font-family: 'Inter';
 }
 #message-sent{
     font-family: Helvetica;
