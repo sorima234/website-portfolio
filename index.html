@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="navbar new-font">
+			<img src="images/logo.png" style="width:5.1em;float: left;">
+			<div class="topnav">
+				<ul id="menu">
+					<li class="current-selected"><a href="#">Home</a></li>
+					<li class=""><a href="#About">About</a></li>
+					<li class=""><a href="#Projects">Projects</a></li>
+					<li class=""><a href="#Contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	  
+		<section class="bg" id="home">
+			<div class="row">
+				<div class="intro-text">
+					<h2 class="intro_title">Hello, I'm <span class="highlight">James Sorima.</span></h2>
+					<p class="intro_desc">A Web Developer who enjoys building interactive websites and applications.</p>
+					<a class="button" href="#About">Know More</a>
+				</div>
+			</div>
+		</section>
+		<section id="About">
+		<header class="category-header">
+			<h1 class="category-title-underline new-font">ABOUT</h1>
+		</header>
+			<div class="home-intro">
+				<div style="max-width: 100%;">
+					<img src="images/programmer.png" style="width: 100%;">
+				</div>
+				<div class="">
+					<p class="text-padding new-font">
+						Simple content structure, clear design patterns, and meaningful interactions are important to me because more simplicity means more impact. This is key to my approach from design to implementation, Simple, long-term solutions to less complex challenges.<br><br> 
+						I love coding and solving problems with it, and I'm looking forward to working with other talented programmers and learning even more!
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="Projects">
+			<header class="category-header">
+				<h1 class="category-title-underline new-font">PROJECTS</h1>
+			</header>
+			<ul>
+				<li>
+					<div class="img-wrap">
+						<img src="images/simple-calculator.png">
+						<div class="img-description-layer">
+							<p class="img-description">Simple Calculator</p>
+						</div>
+					</div>
+					<div class="container">
+						<a href="https://sorima234.github.io/simple-calculator/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/simple-calculator" target="_blank" class="button-code">Source Code</a>
+					</div>
+				</li>
+				<li>
+					<div class="img-wrap">
+						<img src="images/login-form.png">
+						<div class="img-description-layer">
+							<p class="img-description">Login Form</p>
+						</div>
+					</div>
+					<div class="container">
+						<a href="https://sorima234.github.io/login-form/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/login-form" target="_blank" class="button-code">Source Code</a>
+					</div>
+				</li>	
+				<li>
+					<div class="img-wrap">
+						<img src="images/anime-website.png">
+						<div class="img-description-layer">
+							<p class="img-description">Anime Website</p>
+						</div>
+					</div>
+					<div class="container">
+						<a href="https://sorima234.github.io/anime-website/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/anime-website" target="_blank" class="button-code">Source Code</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section id="Contact">
+			<header class="category-header">
+				<h1 class="category-title-underline new-font">CONTACT</h1>
+				<p class="text new-font">Do you have a question or want to collaborate?</p>
+			</header>
+			<div class="contact-form">
+				<input type="text" placeholder="Name" required>
+				<input type="text" placeholder="Email" required>
+				<textarea type="text" placeholder="Your message" style="height:170px"></textarea>
+				<p id="message-sent"><br></p>
+				<input type="submit" id="submit-button" value="Submit" onclick="messageSent()">
+			</div>
+		</section>
+
+		<footer>
+			<button class="scroll-to-top" onclick='scrollToTop()'></button>	
+			<div class="icon-wrap">
+				<div class="icons">
+					<a href="https://github.com/sorima234" title="Github" target="_blank">
+						<img src="images/github.png" alt="github">
+					</a>
+					<a href="https://codepen.io/jw234524" title="Codepen" target="_blank">
+						<img src="images/codepen.png" alt="codepen">
+					</a>
+					<a href="mailto:sorima.234524@laspinas.sti.edu.ph" title="Email" target="_blank">
+						<img src="images/outlook.png" alt="outlook">
+					</a>
+					<a href="https://twitter.com/" title="Twitter" target="_blank">
+						<img src="images/twitter.png" alt="twitter">
+					</a>
+				</div>
+			</div>
+			<div class="highlight-1 new-font">
+				JAMES WILLIAM SORIMA
+				<span class="highlight">@2022</span>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
