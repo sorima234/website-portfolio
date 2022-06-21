@@ -352,7 +352,7 @@ input[type=submit]:hover{
     background-color: #44a790;
 }
 .new-font{
-    font-family: 'Inter';
+    font-family: 'Inter', Helvetica, Roboto;
 }
 #message-sent{
     font-family: Helvetica;
