@@ -37,7 +37,7 @@ div{display: block;}
     padding: 0;
     margin: 0;
     text-align: center;
-    margin-right: 56px;
+    margin-right: 7em;
 }
 #navbar li{
     height: 3rem;
@@ -160,13 +160,8 @@ a.button:hover, a.button:active{
 .button-code:hover{
     background-color: #44a790;
     color: white;
-    
 }
-
-p{
-    margin:0;
-}
-
+p{margin:0;}
 #About{
     min-height: 130vh;
     background: #393b42;
@@ -187,14 +182,12 @@ p{
     text-align: center;
     padding: 0;
 }
-  
 #Projects li{
     width: 25%;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 2.8em;
 }
-  
 #Projects li img{
     max-width: 100%;
     height: auto;
@@ -202,14 +195,11 @@ p{
 #Contact{
     min-height: 130vh;
     background: #4d4d53;
-    
 }
-
 .loc-caption:before{
     content: attr(title);
     display: block;
 }
-
 .text{
     margin-left: auto;
     margin-right: auto;
@@ -228,7 +218,6 @@ p{
     padding-top: 1em;
     color: #d4e2e8;
 }
-
 .category-title{
     padding-top: 3.2em;
     margin: 0;
@@ -265,7 +254,6 @@ p{
     margin-top:2rem;
     margin-bottom:2rem;
 }
-
 footer{
     padding: 8px 0 1.875em 0;
     position: relative;
@@ -302,7 +290,6 @@ input[type=submit]{
 input[type=submit]:hover{
     opacity: .8;
 }
-
 .img-wrap{
     position: relative;
     max-width:100%;
