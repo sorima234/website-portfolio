@@ -4,31 +4,34 @@ body{
     text-align: center;
     font-family: Montserrat;
 }
-html{
-    scroll-behavior: smooth;
-    /* enable smooth scrolling on browser*/
-    /* chrome://flags/#smooth-scrolling  */
-}
-div{
-    display: block;
-}
-.navbar{
+div{display: block;}
+#navbar{
     height: 3rem;
     position: fixed;
     width: 100%;
     z-index: 1;
     box-shadow: 0 2px 24px 0 rgba(0,0,0,.2);
     background: #4d505f;
+    top: -50px;
+    transition: top 0.6s;
+    display: block;
 }
-.current-selected a, #navbar a:hover{
+.current-selected a{
     color: #44a790 !important;
     border-bottom: 5px solid #44a790;
 }
-.navbar img{
-    width: 4.625em;
+#navbar img{
+    width: 106px;
+    height: 48px;
     float: left;
+    background-color: #d4e2e8;
+    display: relative;
+    border-radius: 4px;
 }
-.navbar ul{
+#navbar img:hover{
+    background-color: #44a790;
+}
+#navbar ul{
     height: 3rem;
     list-style: none;
     background: #4d505f;
@@ -37,11 +40,11 @@ div{
     text-align: center;
     margin-right: 56px;
 }
-.navbar li{
+#navbar li{
     height: 3rem;
     display: inline-block;
 }
-.navbar a{
+#navbar a{
     text-decoration: none;
     color: #d4e2e8;
     width: 100px;
@@ -51,7 +54,7 @@ div{
     font-weight: bold;
     text-align: center;
 }
-.navbar a:hover{
+#navbar a:hover{
     color: #44a790;
 }
 .topnav{
@@ -62,6 +65,7 @@ div{
     min-height: 100vh;
     z-index: 2;
     background-image: url("images/wallpaper.jpg");
+    background-size: cover;
     opacity: .9;
     background-attachment: fixed;
     background-position: center;
@@ -165,11 +169,11 @@ p{
 }
 
 #About{
-    min-height: 160vh;
+    min-height: 130vh;
     background: #393b42;
 }
 #Projects{
-    min-height: 100vh;
+    min-height: 140vh;
     background: #3d3e42;
     background-image: url("images/background.png");
     background-attachment: fixed;
@@ -189,6 +193,7 @@ p{
     width: 25%;
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 2.8em;
 }
   
 #Projects li img{
@@ -198,6 +203,7 @@ p{
 #Contact{
     min-height: 130vh;
     background: #4d4d53;
+    
 }
 
 .loc-caption:before{
@@ -210,8 +216,10 @@ p{
     margin-right: auto;
     width: 24em;
     margin-bottom: 3em;
-    padding-top: 1em; 
+    padding-top: 1em;
+    padding-left: 1.625em; 
     color: #44a790;
+    font-size: 20px;
 }
 .text-padding{
     margin-left: auto;
@@ -260,7 +268,7 @@ p{
 }
 
 footer{
-    padding: 8px 0 40px 0;
+    padding: 8px 0 1.875em 0;
     position: relative;
     display: block;
     background-color: #274972;
@@ -340,7 +348,7 @@ input[type=submit]:hover{
     color: white;
     text-align: center;
     float: left;
-    margin-bottom: 1.3em;
+    margin-bottom: .8em;
 }
 .icons{
     display: flex;
@@ -349,18 +357,24 @@ input[type=submit]:hover{
 }
 .icons img{
     margin: 1em;
-    height: 3em;
+    height: 48px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 50% 50%;
     border-radius: 50%;
-    background-color: #e2e3ec;
+    background-color: #3f4047;
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,.2);
+    border: 1px solid black;
 }
 .icons img:hover{
-    background-color: #44a790;
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,.7);
 }
+.github:hover{background-color: black}
+.codepen:hover{background-color: black}
+.email:hover{background-color: #ca473b;}
+.twitter:hover{background-color: rgb(29, 155, 240);}
 .new-font{
-    font-family: 'Inter', Helvetica, Roboto;
+    font-family: 'Inter';
 }
 #message-sent{
     font-family: Helvetica;
@@ -375,8 +389,9 @@ input[type=submit]:hover{
     background-repeat: no-repeat;
     background-size: 50% 50%;
     border-radius: 50%;
-    width: 5em;
-    height: 5em;
+    width: 3.416em;
+    height: 4.041em;
+    padding: 1px 6px;
     border: none;
     background-color: white;
     top:-42px;
@@ -385,5 +400,5 @@ input[type=submit]:hover{
 .scroll-to-top:hover {
     background-color: rgb(68, 167, 144);
     box-shadow: 0 4px 24px 0 rgba(0,0,0,.3);}
-.highlight-1 {color: #2f313a;}
-.highlight-1 span {color:#44a790}
+.highlight-1 {color: #1a1b1f;font-size: 18px;}
+.highlight-1 span {color:#44a790;font-size: 18px;}
