@@ -5,16 +5,17 @@
     <title>Website Portfolio</title>
 	<link rel="stylesheet" href="style.css">
 	<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="navbar new-font">
+		<div id="navbar" class="new-font">
 			<a href="https://sorima234.github.io/website-portfolio/" style="display:contents" title="Website Home"><img src="images/logo.png"></a>
 			<div class="topnav">
 				<ul id="menu">
-					<li class="current-selected"><a href="#">Home</a></li>
-					<li class=""><a href="#About">About</a></li>
-					<li class=""><a href="#Projects">Projects</a></li>
-					<li class=""><a href="#Contact">Contact</a></li>
+					<li id="hom" class="current-selected"><a href="#home">Home</a></li>
+					<li id="abo" class=""><a href="#About">About</a></li>
+					<li id="pro" class=""><a href="#Projects">Projects</a></li>
+					<li id="con" class=""><a href="#Contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -34,7 +35,7 @@
 		</header>
 			<div class="home-intro">
 				<div style="max-width: 100%;">
-					<img src="images/programmer.png" style="width: 100%;">
+					<img src="images/programmer.png" style="width: 100%;border-radius: 8px;">
 				</div>
 				<div class="">
 					<p class="text-padding new-font">
@@ -51,14 +52,14 @@
 			<ul>
 				<li>
 					<div class="img-wrap">
-						<img src="images/simple-calculator.png">
+						<img src="images/naruto.png">
 						<div class="img-description-layer">
-							<p class="img-description">Simple Calculator</p>
+							<p class="img-description">Naruto</p>
 						</div>
 					</div>
 					<div class="container">
-						<a href="https://sorima234.github.io/simple-calculator/" target="_blank" class="button-live"><span>See Live</span></a> 
-						<a href="https://github.com/sorima234/simple-calculator" target="_blank" class="button-code">Source Code</a>
+						<a href="https://sorima234.github.io/nar/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/nar" target="_blank" class="button-code">Source Code</a>
 					</div>
 				</li>
 				<li>
@@ -85,6 +86,42 @@
 						<a href="https://github.com/sorima234/anime-website" target="_blank" class="button-code">Source Code</a>
 					</div>
 				</li>
+				<li>
+					<div class="img-wrap">
+						<img src="images/simple-calculator.png">
+						<div class="img-description-layer">
+							<p class="img-description">Simple Calculator</p>
+						</div>
+					</div>
+					<div class="container">
+						<a href="https://sorima234.github.io/simple-calculator/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/simple-calculator" target="_blank" class="button-code">Source Code</a>
+					</div>
+				</li>
+				<li>
+					<div class="img-wrap">
+						<img src="images/mondrian-painting.png">
+						<div class="img-description-layer">
+							<p class="img-description">Mondrian Painting</p>
+						</div>
+					</div>
+					<div class="container">
+						<a href="https://sorima234.github.io/mondrian/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/mondrian" target="_blank" class="button-code">Source Code</a>
+					</div>
+				</li>
+				<li>
+					<div class="img-wrap">
+						<img src="images/grid-layout.png">
+						<div class="img-description-layer">
+							<p class="img-description">Grid Layout</p>
+						</div>
+					</div>
+					<div class="container">
+						<a href="https://sorima234.github.io/grid-layout/" target="_blank" class="button-live"><span>See Live</span></a> 
+						<a href="https://github.com/sorima234/grid-layout" target="_blank" class="button-code">Source Code</a>
+					</div>
+				</li>
 			</ul>
 		</section>
 		<section id="Contact">
@@ -102,20 +139,20 @@
 		</section>
 
 		<footer>
-			<button class="scroll-to-top" onclick='scrollToTop()'></button>	
+			<a class="scroll-to-top" href="#home" onclick='scrollToTop()'></a>	
 			<div class="icon-wrap">
 				<div class="icons">
 					<a href="https://github.com/sorima234" title="Github" target="_blank">
-						<img src="images/github.png" alt="github">
+						<img src="images/github.png" alt="github" class="github">
 					</a>
 					<a href="https://codepen.io/jw234524" title="Codepen" target="_blank">
-						<img src="images/codepen.png" alt="codepen" style="border: 2px solid black;">
+						<img src="images/codepen.png" alt="codepen" class="codepen">
 					</a>
 					<a href="mailto:sorima.234524@laspinas.sti.edu.ph" title="Email" target="_blank">
-						<img src="images/email.png" alt="email">
+						<img src="images/email.png" alt="email" class="email">
 					</a>
 					<a href="https://twitter.com/" title="Twitter" target="_blank">
-						<img src="images/twitter.png" alt="twitter">
+						<img src="images/twitter.png" alt="twitter" class="twitter">
 					</a>
 				</div>
 			</div>
