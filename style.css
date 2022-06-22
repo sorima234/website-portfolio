@@ -365,6 +365,7 @@ input[type=submit]:hover{
 #message-sent{
     font-family: Helvetica;
     font-size: .9rem;
+    color: #d4e2e8;
 }
 .scroll-to-top{
     position: relative;
