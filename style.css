@@ -26,7 +26,6 @@ div{display: block;}
     float: left;
     background-color: #d4e2e8;
     display: relative;
-    border-radius: 4px;
 }
 #navbar img:hover{
     background-color: #44a790;
@@ -328,7 +327,7 @@ input[type=submit]:hover{
     justify-content: center;
     width: 315px;
     height: 204px;
-    font-family: Helvetica;
+    font-family: 'Inter';
 }
 .img-wrap:hover .img-description-layer{
     visibility: visible;
