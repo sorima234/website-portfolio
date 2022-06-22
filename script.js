@@ -4,7 +4,6 @@ function messageSent(){
     document.getElementById("message-sent").innerHTML = "Your message has been sent. Thank you!";
 }
 function scrollToTop(){
-    window.scrollTo(0, 0);
     var current1 = document.getElementsByClassName("current-selected");
     current1[0].className = current1[0].className.replace("current-selected", "");
     menuItems[0].className += "current-selected";
@@ -21,3 +20,29 @@ for (var i = 0; i < menuItems.length; i++){
     this.className += "current-selected";
     });
 }
+window.onscroll = function() {
+    if (window.scrollY >= 629) {
+        document.getElementById("navbar").style.top = "0";
+    }
+    else if (window.scrollY <= 457) {
+        document.getElementById("navbar").style.top = "-50px";
+    }
+}
+
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
