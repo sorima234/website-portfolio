@@ -171,6 +171,11 @@ p{
 #Projects{
     min-height: 100vh;
     background: #3d3e42;
+    background-image: url("images/background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #Projects ul > li{
     display: inline-block;
