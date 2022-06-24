@@ -26,6 +26,7 @@ div{display: block;}
     float: left;
     background-color: #d4e2e8;
     display: relative;
+    margin-left: 1em;
 }
 #navbar img:hover{
     background-color: #44a790;
